@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowCodeBuildProjectPassRole",
+      "Effect": "Allow",
+      "Action": [
+        "iam:PassRole",
+        "codebuild:CreateProject",
+        "codebuild:StartBuild"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

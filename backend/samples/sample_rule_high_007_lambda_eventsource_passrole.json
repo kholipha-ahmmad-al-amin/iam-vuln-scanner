@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowLambdaEventSourcePassRole",
+      "Effect": "Allow",
+      "Action": [
+        "iam:PassRole",
+        "lambda:CreateFunction",
+        "lambda:CreateEventSourceMapping"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

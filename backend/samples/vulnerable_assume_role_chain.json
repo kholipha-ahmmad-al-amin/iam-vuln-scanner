@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ModifyTrustPolicyAndAssume",
+      "Effect": "Allow",
+      "Action": [
+        "iam:UpdateAssumeRolePolicy",
+        "sts:AssumeRole"
+      ],
+      "Resource": "arn:aws:iam::123456789012:role/*"
+    }
+  ]
+}

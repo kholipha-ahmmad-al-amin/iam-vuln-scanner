@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowAuditorReconnaissance",
+      "Effect": "Allow",
+      "Action": [
+        "iam:GetAccountSummary",
+        "iam:GetPolicy",
+        "iam:GetRole",
+        "iam:ListUsers",
+        "iam:ListRoles",
+        "ec2:DescribeInstances",
+        "cloudtrail:LookupEvents"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

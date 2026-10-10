@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowDataPipelinePassRoleExecution",
+      "Effect": "Allow",
+      "Action": [
+        "iam:PassRole",
+        "datapipeline:CreatePipeline",
+        "datapipeline:PutPipelineDefinition",
+        "datapipeline:ActivatePipeline"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

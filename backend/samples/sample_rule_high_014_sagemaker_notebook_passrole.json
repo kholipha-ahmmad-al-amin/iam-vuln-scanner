@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowSageMakerNotebookPassRole",
+      "Effect": "Allow",
+      "Action": [
+        "iam:PassRole",
+        "sagemaker:CreateNotebookInstance",
+        "sagemaker:CreatePresignedNotebookInstanceUrl"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

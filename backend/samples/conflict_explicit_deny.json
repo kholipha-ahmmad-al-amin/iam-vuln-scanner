@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "BroadAllowIAM",
+      "Effect": "Allow",
+      "Action": "iam:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "StrictExplicitDenyOnPrivEsc",
+      "Effect": "Deny",
+      "Action": [
+        "iam:CreatePolicyVersion",
+        "iam:SetDefaultPolicyVersion",
+        "iam:Put*Policy",
+        "iam:Attach*Policy",
+        "iam:PassRole"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
